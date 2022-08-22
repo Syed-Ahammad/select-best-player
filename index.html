@@ -118,6 +118,8 @@
     
     
                     <!-- input field for counting total -->
+
+                    <!-- player list -->
                     <div class="text-white row-span-3 w-1/4 ">
                         <div class="text-center bg-black mb-4 h-2/5 py-5 border">
                          <h2 class="text-2xl font-bold border-b-2 mx-4 pb-3 border-orange-400">Selected - V</h2>
@@ -125,25 +127,30 @@
                              <li class="text-base mx-4"> <span>1</span>.  items</li>
                          </ul>
                       </div>
-                     
+
+
+                     <!-- calculation field -->
                         <div class="bg-black h-2/4 border text-center ">
                          <h2 class="text-2xl pt-4 font-bold border-b-2 mx-4 pb-3 border-orange-400">Budget</h2>
-                         <p class="m-4 text-xl flex justify-between">Per Player: <input class="w-2/5 text-black pl-2" type="number" value="1000"></p>
-                         <button class="w-3/4 px-5 py-1 bg-cyan-500 font-normal text-medium">CALCULATE</button>
-                         <p class="m-4 text-xl flex justify-between">Player Expenses:  $<span class="text-orange-600">5000</span></p>
-                         <p class="m-4 text-xl flex justify-between">Manager: <input class="w-2/5 text-black pl-2" type="number" value="2000"></p>
-                         <p class="m-4 text-xl flex justify-between">Coach: <input class="w-2/5 text-black pl-2" type="number" value="4000"></p>
-                         <button class="w-3/4 px-5 py-1 bg-cyan-500 font-normal text-medium">CALCULATE TOTAL</button>
-                         <p class="m-4 text-xl flex justify-between">Total:  <span class="text-orange-600 ml-4">$<span>11000</span></span></p>
+                         <p class="m-4 text-xl flex justify-between">Per Player: <input id="per-cost-field" class="w-2/5 text-black pl-2" type="number" value="1000"></p>
+
+                         <button id="players-btn" class="w-3/4 px-5 py-1 bg-cyan-500 font-normal text-medium">CALCULATE</button>
+
+                         <p class="m-4 text-xl flex justify-between">Player Expenses: <span class="text-orange-600">$<span id="players-cost">5000</span></span></p>
+
+
+                         <p class="m-4 text-xl flex justify-between">Manager: <input id="per-manager" class="w-2/5 text-black pl-2" type="number" value="2000"></p>
+                         <p class="m-4 text-xl flex justify-between">Coach: <input id="per-coach" class="w-2/5 text-black pl-2" type="number" value="4000"></p>
+
+                         <button id="total-btn" class="w-3/4 px-5 py-1 bg-cyan-500 font-normal text-medium">CALCULATE TOTAL</button>
+
+                         <p class="m-4 text-xl flex justify-between">Total:  <span class="text-orange-600 ml-4">$<span id="total-expenses">11000</span></span></p>
                         </div>
                      </div>
-                     <!-- card end -->
-          
-    
           </div>
     
        </section>
-   <script src=""></script>
+   <script src="app.js"></script>
     
 </body>
 </html>
