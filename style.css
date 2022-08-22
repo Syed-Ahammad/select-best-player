@@ -5,7 +5,11 @@ header{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: rgb(34, 34, 34);
+    background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)),
+    url("./img/banner.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .heading{
     width: 50%;
@@ -19,7 +23,7 @@ header{
 .header-details{
     font-size: 20px;
     font-weight: 400;
-    color: white;
+    color: rgb(255, 255, 255);
 }
 button{
     padding: 10px 20px;
