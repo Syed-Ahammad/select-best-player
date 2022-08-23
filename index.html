@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body class="flex flex-col">
     <header class="container-fluid">
             <div class="heading">
             <h1 class="tittle text-orange-500">Select Your Best Player</h1>
@@ -18,10 +18,10 @@
 
     <!-- card container -->
     <section class="card-section bg-slate-800">
-        <div class="flex py-32 px-28 gap-4">
+        <div class="flex md:flex-nowrap flex-wrap py-32 px-28 gap-4">
 
             <!-- player cards -->
-            <div id="player-card" class="grid grid-cols-lg-3 grid-cols-2 gap-4 w-lg-3/4 w-2/3">
+            <div id="player-card" class="grid md:grid-cols-2 lg:grid-cols-3 grid-cols-1 gap-4 lg:w-3/4 md:w-2/3 w-full">
                 
    
             </div>
@@ -30,17 +30,17 @@
                     <!-- input field for counting total -->
 
                     <!-- player list -->
-                    <div class="text-white row-span-3 w-lg-1/4 w-1/3 ">
-                        <div class="text-center bg-black mb-4 h-2/5 py-5 border">
+                    <div class="text-white lg:row-span-3 lg:w-1/4 md:w-1/3 w-full">
+                        <div class="text-center bg-black mb-4 lg:h-2/5 h-1/2 py-5 border">
                          <h2 class="text-2xl font-bold border-b-2 mx-4 pb-3 border-orange-400">Selected - V</h2>
                          <table id="table" class="table-auto my-4 mx-auto">
     
                          </table>
-                      </div>
+                        </div>
 
 
                      <!-- calculation field -->
-                        <div class="bg-black h-2/4 border text-center ">
+                        <div class="bg-black lg:h-2/4 h-full border text-center ">
                          <h2 class="text-2xl pt-4 font-bold border-b-2 mx-4 pb-3 border-orange-400">Budget</h2>
                          <p class="m-4 text-xl flex justify-between">Per Player: <input id="per-cost-field" class="w-2/5 text-black pl-2" type="number" value="1000"></p>
 
@@ -60,6 +60,11 @@
           </div>
     
        </section>
+
+       <!-- footer  -->
+       <footer class="text-center border-t-2 text-white bg-slate-800">
+        <p class="py-12">Copyright @ 2022 All Rights Reserved</p>
+       </footer>
        <script src="js/app.js"></script>
        <script src="js/calculation.js"></script>
     
